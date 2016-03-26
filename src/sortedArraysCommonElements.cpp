@@ -25,11 +25,10 @@ struct transaction {
 };
 
 struct transaction * sortedArraysCommonElements(struct transaction *A, int ALen, struct transaction *B, int BLen) {
-	int i, j, k,found = 1,count=0,flag = 0;
+	int i, j, k,found = 1,count=0;
 	if (A == NULL || B == NULL || ALen <= 0 || BLen <= 0)
 		return NULL;
 	struct transaction *temp = NULL;
-	//struct transaction *temp = (struct transaction *)malloc(sizeof(struct transaction));
 	for (i = 0; i < ALen; i++){
 		for (j = 0; j < BLen; j++){
 			for (k = 0; k < 11; k++){
